@@ -4,17 +4,17 @@ import { FakeService } from 'src/services/fake.service';
 
 
 import { DataComponent } from './data.component';
+import { HttpErrorResponse } from '@angular/common/http';
 
 import {
   BrowserDynamicTestingModule,
   platformBrowserDynamicTesting
 } from '@angular/platform-browser-dynamic/testing';
-import { HttpErrorResponse } from '@angular/common/http';
+
 
 beforeAll(() => {
   TestBed.resetTestEnvironment();
-  TestBed.initTestEnvironment(BrowserDynamicTestingModule,
-    platformBrowserDynamicTesting());
+  TestBed.initTestEnvironment(BrowserDynamicTestingModule,platformBrowserDynamicTesting());
 });
 
 describe('DataComponent', () => {
@@ -64,4 +64,5 @@ describe('DataComponent', () => {
     component.getServiceData();
     expect(component.errorMessage).toBe('Not Found');
   });
+
 });

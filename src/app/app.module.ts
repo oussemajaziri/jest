@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { MatchersComponent } from './components/matchers/matchers.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DataComponent } from './components/data/data.component';
+import { TestComponent } from './components/test/test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MatchersComponent,
-    DataComponent
+    DataComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
